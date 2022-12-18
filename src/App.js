@@ -4,12 +4,13 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { BsCheckLg } from "react-icons/bs";
 
 function App() {
+  const [isCompletedScreen, setIsCompletedScreen]= useState(false);
   const [allTodos, setAllTodos] = useState([]); //todolist array olarak buaradan oluşturalacak
   const [newImg, setNewImg] = useState(); //resim url olarak buradan oluşturalacak
   const [newTitle, setNewTitle] = useState(""); //başlık string olarak buradan oluşturalacak
   const [newDescription, setNewDescription] = useState(""); //açıklama string buradan oluşturalacak
   const [completedTodos, setCompletedTodos] = useState([]); //tamamlandı array buradan oluşturalacak
-  const [isCompletedScreen, setIsCompletedScreen] = useState(false);
+
 
   //burada yeni todo oluşturuluyor
   const handleAddTodo = () => {
