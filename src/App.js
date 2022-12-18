@@ -82,7 +82,7 @@ function App() {
       CompletedOn: CompletedOn,
     };
 
-    let updatedCompletedArr = [...completedTodos, filteredItem];
+    let updatedCompletedArr = [...completedTodos];
     updatedCompletedArr.push(filteredItem);
     setCompletedTodos(updatedCompletedArr);
     localStorage.setItem("completedTodos", JSON.stringify(updatedCompletedArr));
